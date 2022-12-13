@@ -3,18 +3,68 @@
  @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap'); 
 
  @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&family=Roboto+Slab:wght@300&display=swap'); 
+
+*{margin:0;
+padding:0;
+
+}
 body{
     background-color:goldenrod;
 }
 
-h2{
+/* h2{
 text-align: center;
 color: lightslategray;
 font-size: 150px;
 font-weight: bold;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-}
+} */
+.logo-container {
+    width: 70px;
+    height: 100%;
+    padding: 5px;
+  }
+  .logo {
+    width: 70px;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+.navbar{
+    background:rgb(6, 63, 95);
+    text-align: center;
+    position: sticky;
+    height:fit-content;
+    top: 0;
+    }
+    
+    .navbar ul{
+        display: inline-flex;
+        list-style: none;
+        color:rgb(16, 16, 16);
+    }
+    
+    .navbar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 10px;
+    }
+    
+    .navbar ul li a{
+        text-decoration:none ;
+        color: rgb(11, 10, 10);
+    }
+     .navbar ul li :hover{
+       /* display: block;
+        position: absolute;*/
+        background-color: rgb(22, 87, 133);
+        padding: 10px;
+    }
+
+    
+
+
 
 p{
     font-size: large;
@@ -24,3 +74,63 @@ p{
  .tsnat{
 font-size: large;
  }
+
+
+
+
+
+ .footer{
+    background:rgb(6, 63, 95);
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+    margin-bottom: 0;
+    }
+    
+    .footer .rowf{
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:rgb(9, 9, 9);
+    font-size:1em;
+    }
+    
+    .footer .rowf a{
+    text-decoration:none;
+    color:rgb(10, 9, 9);
+    transition:0.5s;
+    }
+    
+    .footer .rowf a:hover{
+    color:#fff;
+    }
+    
+    .footer .rowf ul{
+    width:100%;
+    }
+    
+    .footer .rowf ul li{
+    display:inline-block;
+    margin:0px 30px;
+    }
+    
+    .footer .rowf a i{
+    font-size:2em;
+    margin:0% 1%;
+    }
+    
+    @media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+    }
+    .footer .rowf ul li{
+    display:block;
+    margin:10px 0px;
+    text-align:left;
+    }
+    .footer .rowf a i{
+    margin:0% 3%;
+    }
+}
+          
