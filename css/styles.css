@@ -31,6 +31,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 50%;
   }
 
+
 .navbar{
     background:rgb(6, 63, 95);
     text-align: center;
@@ -63,6 +64,16 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     
+.hero {
+  /* width: 60vw;
+  height: clamp(30vh, 60vw, 50vh); */
+  max-width:5%;
+  max-height:5%;
+  border-radius: 10px;
+  position: relative;
+ /*  object-fit: cover; */
+  object-position: center;
+}
 
 
 
