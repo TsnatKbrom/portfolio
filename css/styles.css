@@ -1,67 +1,51 @@
-*{margin:0;
-padding:0;
-
+html{
+  font-size:16px;
 }
-body{
-    background-color:goldenrod;
+*{  margin:0;
+    padding:0;
 }
-
-.img-container {
-    position: relative;
-    height: 50%;
-    width: 100%;
-    border-radius: 5px 5px 0 0;
-    background: rgba(26, 26, 29);
-  }
-/* h2{
-text-align: center;
-color: lightslategray;
-font-size: 150px;
-font-weight: bold;
-
-
-} */
-.logo-container {
-    width: 120px;
-    height: 100%;
-    padding: 2px;
-  }
-  .logo {
-    width: 70%;
-    height: 100%;
-    border-radius: 60%;
-  }
-
-
 .navbar{
     background:rgb(6, 63, 95);
-    text-align: center;
+    /* text-align: center; */
     position: sticky;
-    height:fit-content;
-    top: 0;
+    /* height:fit-content; */
+    /* top: 0; */
+    /* width: 100%; */
     }
     
     .navbar ul{
-        display: inline-flex;
+      font-size: 1.75rem;
+        /* margin-top: -10rem; */
+        height: 2rem;
+        display: flex;
+        align-items: center;
         list-style: none;
-        color:rgb(254, 254, 254);
+        /* color:rgb(200, 20, 20); */
     }
     
     .navbar ul li{
-    width: 150px;
-    margin: 15px;
-    padding: 10px;
+    margin-top: -10rem;
+    display: flex;
+    justify-content:center;
+    align-content: space-between;
+    width: 100%;
+    /* margin: 15px; */
+    padding: 3rem;
     }
     
     .navbar ul li a{
         text-decoration:none ;
-        color: rgb(252, 251, 251);
+        color: white;
+        transition: transform .5s ease-in-out, color .6s ease-out;
     }
-     .navbar ul li :hover{
+     .navbar ul li a:hover{
        /* display: block;
         position: absolute;*/
+        transform: scale(1.1,1.1);
         background-color: rgb(22, 87, 133);
-       /* padding: 10px;*/
+       padding: 1.5rem;
+       border-radius: 1rem;
+       color: black;
     }
 
     
@@ -75,25 +59,14 @@ font-weight: bold;
  /*  object-fit: cover; */
   object-position: center;
 }
+.carousel-words{
+  z-index: 2;
+  position: sticky;
+}
+.sfpics{
+  height: 60rem;
+}
 
-.carousel1 {
-    width: 60vw;
-    height: clamp(30vh, 60vw, 50vh);
-    max-width: 50vh;
-    max-height: 50vh;
-    border-radius: 10px;
-    position: relative;
-    z-index: 2;
-    object-fit: cover;
-    object-position: center;
-}
-/*
-p{
-    font-size: large;
-    font-family: sans-serif;
-    color: green;
-}
-*/
  .tsnat{
 font-size: large;
  }
@@ -116,6 +89,51 @@ font-size: large;
     }
 } */
 
+
+input[type=submit] {
+  background-color:rgb(6, 63, 95);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(247, 241, 241)d;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-size {
+  float: left;
+  width: 4rem;
+  margin-top: 6px;
+}
+
+.col-space {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+row-feed:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
 @media (min-width: 576px) {
     .container {
       max-width: 540px;
@@ -125,7 +143,8 @@ font-size: large;
 
  footer{
     background:rgb(6, 63, 95);
-    padding:30px 0px;
+    /* padding:30px 0px; */
+    height: 10rem;
     width: 100%;
     /* font-family: 'Play', sans-serif; */
     text-align:center;
@@ -135,28 +154,31 @@ font-size: large;
     
 .footer .rowf{
     width:100%;
-    margin:1% 0%;
-    padding:0.6% 0%;
+    /* margin:1% 0%;
+    padding:0.6% 0%; */
     color:rgb(247, 241, 241);
-    font-size:1em;
+    font-size:2rem;
     }
     
-.footer .rowf a{
+footer .rowf a{
+    font-size: 4rem;
     text-decoration:none;
     color:rgb(21, 22, 22);
-    transition:0.5s;
+    /* transition:0.5s; */
+    transition: transform .5s ease-in-out, color .6s ease-out;
     }
     
-.footer .rowf a:hover{
+footer .rowf a:hover{
     color:#fff;
+    transform: scale(1.2,1.2);
     }
     
 .footer .rowf ul li{
     display:inline-block;
-    margin:0px 3px;
+    margin:0px 0.3rem;
     }
     
-.footer .rowf a i{
+.footer .rowf a li{
     font-size:4em;
     margin:0% 3%;
     }
@@ -164,7 +186,7 @@ font-size: large;
     @media (max-width:720px){
     .footer{
     text-align:left;
-    padding:5%;
+    padding:3%;
   
     }
     .footer .rowf ul li{
@@ -174,7 +196,7 @@ font-size: large;
     
     }
     .footer .rowf a i{
-    margin:0% 2%;
+    margin:0% 1%;
     }
 }
           

@@ -19,25 +19,25 @@
 
    
 </head>
-<body class=" body col col-10 offset-1 ">
+<body class=" body border border-5">
     <!-- nav bar -->
-    <div class="navbar"> 
-        <nav>
-
-         <ul>
-           <div class="logo-container">
-                <a href="index.html">
-                  <img src="./images/ts.jpg" alt="" class="logo">
-                </a>
-           </div> 
+    <div class="navbar w-100"> 
+        <nav class="w-100">
+          <div class="logo-container float-left" style="border-radius: 60%; height: 12rem; width: 15rem; margin-left: 1rem;">
+            <a href="index.html">
+              <img src="./images/ts.jpg" alt="" class="logo" style="border-radius: 60%";>
+            </a>
+          </div> 
+         <ul class="col col-9 offset-3">
+          
               <li><a href="index.html">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
         </ul>
           
-     </nav>
-        </div>
+        </nav>
+      </div>
         <!-- here is the hero image and the text
    <div class="hero">
       <img src="./images/tsnat.jpg"  alt = "Hero image of Tsnat "> 
@@ -45,146 +45,111 @@
 <!-- here is the hero image and the text -->
 
 <!-- Carousel -->
-<div id="carousel1" class="carousel1 slide align-item-center col col-10 offset-1"  data-bs-ride="carousel" >
+<div  class="carousel slide col col-10 offset-1 bg-light" style="height:60rem;" data-bs-ride="carousel" >
 
     <!-- Indicators/dots -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="carousel" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="carousel" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="carousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="carousel" data-bs-slide-to="1" class="active"></button>
+      <button type="button" data-bs-target="carousel" data-bs-slide-to="2"
+      class="active"></button>
     </div>
   
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./images/tsnat.jpg" alt="tsnat" class="d-block w-100">
+      <div class="carousel-item sfpics active">
+        <img src="./images/tss.jpg" alt="tsnat" class="d-block w-100">
       </div>
-      <div class="carousel-item">
+      <div class="carousel-item sfpics">
         <img src="./images/sf.jpg" alt="tk" class="d-block w-100">
       </div>
-      <div class="carousel-item">
-        <img src="./images/oak.jpg" alt="tlk" class="d-block w-100">
+      <div class="carousel-item sfpics">
+        <img src="./images/tss.jpg" alt="tlk" class="d-block w-100">
       </div>
     </div>
   
-    <!-- Left and right controls/icons -->
-    <button class="carousel-control-prev" type="button" data-bs-target="carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
+     
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
 </div>
-  
 
-  <div class="carousel-item">
-    <img src="./images/tsnat.jpg" alt="tsnat">
-    <div class="carousel-caption">
-      <h3>pic of project</h3>
-      <p>some website designs </p>
-    </div>
-  </div>
-
-
-    <div class="container-fluid bg-primary  "></div>
-        <div class="container">
-            <div class="row align-item-center">
-                <h3 class="text-gold font-weight-normal mb-3"></h3>
-                
-
-            </div>        
-        </div>
-   </div>   
-        <h1 class="card-title text-center animate-charcter"><strong>Hello, My name is<br>Tsnat kbrom</strong></h1>
-        <h2 class="card-title text-center animate-charcter"><strong> web designer </strong></h2>
-        
-    <div  id="about"> 
-       <p>About </p>
-       <p>little bit about my background, I was born in Eritrea and raised in sudan and currently live in  Oakland, CA, USA.I graduated from Ahfad University for Women in 2015. I minored in Bisness and majored in MIS.  </p>
+<!-- Gretting  -->
+      <div class="carousel-words text-center">
+        <h1 class="card-title animate-charcter"><strong>Hello, My name is<br>Tsnat kbrom</strong></h1>
+        <h2 class="card-title animate-charcter"><strong> web designer </strong></h2>
+      </div>
+    <div  id="about"  class="col col-10 offset-1"> 
+       <p><h3>About</h3> </p>
+       <p><h4>I was born in Eritrea and raised in sudan and currently live in  Oakland, CA, USA.I graduated from Ahfad University for Women in 2015. I minored in Bisness and majored in MIS. 
+      </h4>
+     </p>
     </div>
     <!--Start Hero image section-->
     <div class="hero mb-4 bg-light rounded-3 background1 d-flex align-items-center hero-image">
            
     </div>
-    <!--end Hero image section-->
+   
 
-     <!--Start Hero image section-->
-    <div class = "Projects container-fluid"> 
-        <div class="row-cols-4">
-                <div class="col mt-3">
-                <h2>some of my projects</h2>
-                <p>Image </p>
-                  <div class="card">
-                    <img class="card-img-top" src=".png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">first</h4>
-                        <p class="card-text">Some example some text </p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                      </div>
-                    </div>
-                </div>
-            <br>
-            
-            
-                <div class="col mt-3 ">
-                  <h2>first project</h2>
-                  <p>Image </p>
-                  <div class="card">
-                    <img class="card-img-top" src=".png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">first</h4>
-                        <p class="card-text">Some example some text </p>
-                        <a href="#" class="btn btn-primary">See Profile</a>
-                    </div>
-                  </div>
-                </div>
-                <br>
-
-                <div class="col mt-3 ">
-                    <h2>second projrct</h2>
-                    <p>Tranportation  Application </p>
-                    <div class="card">
-                      <img class="card-img-top" src=".png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                          <h4 class="card-title">first</h4>
-                          <p class="card-text">Some example some text </p>
-                          <a href="#" class="btn btn-primary">See Profile</a>
-                        </div>
-                    </div>
-                </div>
-                    <br>
-
-                <div class="col mt-3">
-                      <h2>first project</h2>
-                      <p>Ahfad Universityfor Women</p>
-                      <div class="card">
-                        <img class="card-img-top" src="./images/2022-04-19(1).jpg" alt="Card image" style="width:100%">
-                          <div class="card-body">
-                              <h4 class="card-title">first</h4>
-                              <p class="card-text">For my graduation project we fixed the website of the University allowing registration to be done on line. and allowed teacher and students to interact by creating a chat group with so limited access and added requirements to have acess. We simply tried to create a vertual learning.  </p>
-                              <a href="#" class="btn btn-primary">See Profile</a>
-                            </div>
-                        </div>
-                  </div>
+     <!--Start cards section-->
+  <Section class="container-fluid">
+    <div class="row">
+      <div class="card col" style="width: 18rem;">
+        <img src="./images/h.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Henna Banna</h5>
+          <p class="card-text"><h4> Henna website for a henna artist whois Me.</h4></p>
+          <a href="https://tsnatkbrom.github.io/Project/" class="btn btn-primary">henna banna </a>
         </div>
-                      <br>
-           <!--Start skills section-->
-<section id="projects">
-        <p><h3>Skills</h3>
-            <p> I have 2+ years of extensive experience in complete software development life cycle including user interaction and project management, requirements capture, analysis, design, development, testing, and deployment of Java-based web applications. Knowledge of Front-End technologies and frameworks such as TypeScript, JavaScript, HTML, and Excellent understanding of Java Data Structures, Java 8 features such as streams, Lambda expressions, functional interfaces, collections. A web designer and front-end developer specializing in web design and digital media. When i’m not designing, I enjoy photography, football and chilling along with my family. </p>
-
-         <p> Dynamic and commercially astute web and graphic designer with years of experience elevating
-             company performance through the skilled development of business-critical applications. Hands-on experience in HTML5, JavaScript, jQuery, CSS3, Bootstrap, PHP, MySQL, Adobe Photoshop, Adobe Illustrator, UX designs, Photography.
+      </div>
+      <div class="card col" style="width: 18rem;">
+        <img src="./images/car.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Carvan</h5>
+          <p class="card-text"><h4>website for selling and renting cars </h4></p>
+          <a href="#" class="btn btn-primary">Carvan website</a>
+        </div>
+      </div>
+      <div class="card col" style="width: 18rem;">
+        <img src="./images/bus.avif" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bus App</h5>
+          <p class="card-text"><h4>We worked on an Application that allows the passinger to order food ahead of time to save on time to get to their destination. Based in Kenya Bus for traveling out of states.</h4></p>
+          <a href="#" class="btn btn-primary">website</a>
+        </div>
+      </div>
+      <div class="card col" style="width: 18rem;">
+        <img src="./images/2022-04-19(1).jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Ahfad Universityfor Women</h5>
+          <p class="card-text"><p class="card-text"><h4> my graduation project we fixed the website of the University allowing registration to be done on line. and allowed teacher and students to interact by creating a chat group with so limited access and added requirements to have acess. We simply tried to create a vertual learning.</h4>  </p>
           </p>
-        </p>
-  
-    
-  </section>
-  
-    <p><h1>Let's work together  </h1> </p>  
+          <a href="#" class="btn btn-primary">Ahfad University</a>
+        </div>
+      </div>
+
+    </div>
+  </Section>
+           <!--Start skills section-->
+  <aside id="projects" class="col col-10 offset-1">
+        <h3>Skills</h3>
+            <p> <h4>I have 2+ years of extensive experience in complete software development life cycle including user interaction and project management, requirements capture, analysis, design, development, testing, and deployment of Java-based web applications. Knowledge of Front-End technologies and frameworks such as TypeScript, JavaScript, HTML, and Excellent understanding of Java Data Structures, Java 8 features such as streams, Lambda expressions, functional interfaces, collections. A web designer and front-end developer specializing in web design and digital media. When i’m not designing, I enjoy photography, football and chilling along with my family. </p>
+
+         <p> Dynamic and commercially astute web and graphic designer with years of   experience elevating company performance through the skilled development of business-critical applications. 
+            </h4>
+          </p>
+  </aside>
+  <p></p>
+    <p><h1 id="contact"  class="text-center">Let's work together  </h1> </p>  
     <br>
-    <h2>Contact Me</h2>
-<div class="container">
+    <a  href="/index.html"><input type="button" value="submit"></a>
+    <br>
+    <h2 class="text-center">Contact Me</h2>
+<div class="container" style="position: center;">
   <form action="/submit.html">
 
   <div class="row-feed">
@@ -210,7 +175,7 @@
       <label for="subject">Message</label>
     </div>
     <div class="col-space">
-      <textarea id="feedback" name="feedback"  required  placeholder="Write something.." style="height:200px"></textarea>
+      <textarea id="feedback" name="feedback"  required  placeholder="Write something.." style="height:20rem"></textarea>
     </div>
     </div>
   <br>
@@ -221,16 +186,25 @@
   </form>
 </div>
 <br>
-<p><h2> <cell-phone>(510)007-2121</cell-phone> </h2> </p>  
-<p><h2>Email address: Tsnat.kbrom@gmail.com</h2> </p>  
-<p><h2> or link up on any of the social media platforms mentioned below </h> </p> 
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br><br>
+<br>
+<!-- <p><h2> Cell: (510)007-2121</cell-phone> </h2> </p>   -->
+  <div class="text-center">
+    <p><h2>Email address: Tsnat.kbrom@gmail.com</h2> </p>  
+    <p><h2> or link up on any of the social media platforms mentioned below </h> </p>
+  </div> 
    <footer>   
     <div class="footer  col col-10 offset-1">
         <div class="rowf">
-            <a href="https://www.linkedin.com/in/tsnat-kbrom-7739a6ba/"><i class="fa fa-linkedin"></i></a>
-            <a href="https://www.instagram.com/henna_bana/"><i class="fa fa-instagram"></i></a>
-            <a href="https://github.com/TsnatKbrom/"><i class="fa fa-github"></i></a>
-            <a href="index.html"><i class="fa fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/tsnat-kbrom-7739a6ba/"><i class="fa fa-linkedin mx-2"></i></a>
+            <a href="https://www.instagram.com/henna_bana/"><i class="fa fa-instagram mx-2"></i></a>
+            <a href="https://github.com/TsnatKbrom/"><i class="fa fa-github mx-2"></i></a>
+            <a href="index.html"><i class="fa fa-youtube mx-2"></i></a>
           
         </div>
 
